@@ -16,6 +16,9 @@ public class OAuth2 extends BaseTest{
 //Get Code
 		String code;
 		String accessToken;
+//************************************** IMP Note ***********************************************************
+//  Google has recently added some restriction on OAuth2.0, so automation won't work for these below steps *******************
+		
 //		WebDriver driver = new ChromeDriver();
 //		driver.get("https://accounts.google.com/o/oauth2/v2/auth?scope=https://www.googleapis.com/auth/userinfo.email&auth_url=https://accounts.google.com/o/oauth2/v2/auth&client_id=692183103107-p0m7ent2hk7suguv4vq22hjcfhcr43pj.apps.googleusercontent.com&response_type=code&redirect_uri=https://rahulshettyacademy.com/getCourse.php");
 //		driver.manage().window().maximize();
