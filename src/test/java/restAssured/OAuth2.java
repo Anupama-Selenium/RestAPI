@@ -49,11 +49,14 @@ public class OAuth2{
 		System.out.println("AccessToken" +accessToken);
 		System.out.println(responseAccessToken);
 		
+//Get response from rahul shetty acadmy		
 		
 		String response = given().queryParam("access_token", accessToken)
 		.when().post("https://rahulshettyacademy.com/getCourse.php")
 		.asString();
 		System.out.println(response);
 	}
-//__________________________************_code not working _************____________________________________________________________
+    //__________________________************_code not working _************____________________________________________________________
+	//__________________________************_code not working _************____________________________________________________________
+	//__________________________************_code not working _************____________________________________________________________
 }
