@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="SeleniumSuite" parallel="tests" thread-count="6">
+
+	<listeners>
+		<listener class-name="utils.SuiteListener" />
+	</listeners>
+	
+    <!-- Test 1 : Run Chrome on Selenium Grid -->
+    <test name="Chrome-Grid">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="runOn" value="grid"/>
+        <classes>
+            <class name="qa.tests.Testcase1"/>
+            <class name="qa.tests.Testcase2"/>
+        </classes>
+    </test>
+    
+    <!-- Test 2 : Run Edge on Selenium Grid -->
+    <test name="Edge-grid">
+        <parameter name="browser" value="edge"/>
+        <parameter name="runOn" value="grid"/>
+        <classes>
+            <class name="qa.tests.Testcase1"/>
+        </classes>
+    </test>
+
+    <!-- Test 3 : Run Firefox on Grid -->
+    <test name="Firefox-Grid">
+        <parameter name="browser" value="firefox"/>
+        <parameter name="runOn" value="grid"/>
+        <classes>
+            <class name="qa.tests.Testcase1"/>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="SeleniumSuite" parallel="false">
+
+	<listeners>
+		<listener class-name="utils.SuiteListener" />
+	</listeners>
+	
+	 <!-- Test 1 : Run Chrome Locally -->
+    <test name="Chrome-Local">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="runOn" value="local"/>
+        <classes>
+            <class name="qa.tests.Testcase2"/>
+        </classes>
+    </test>
+</suite>
+
