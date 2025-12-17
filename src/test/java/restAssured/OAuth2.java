@@ -7,9 +7,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import base.BaseTest;
 import io.restassured.path.json.JsonPath;
-public class OAuth2 extends BaseTest{
+public class OAuth2{
 
 	public static void main(String args[]) throws InterruptedException
 	{
@@ -50,11 +49,11 @@ public class OAuth2 extends BaseTest{
 		System.out.println("AccessToken" +accessToken);
 		System.out.println(responseAccessToken);
 		
-//		
-//		String response = given().queryParam("access_token", accessToken)
-//		.when().post("https://rahulshettyacademy.com/getCourse.php")
-//		.asString();
-//		System.out.println(response);
+		
+		String response = given().queryParam("access_token", accessToken)
+		.when().post("https://rahulshettyacademy.com/getCourse.php")
+		.asString();
+		System.out.println(response);
 	}
-	
+//__________________________************_code not working _************____________________________________________________________
 }
