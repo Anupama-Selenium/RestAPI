@@ -1,6 +1,4 @@
 alphabets
-a
-b
 c
 d
 
